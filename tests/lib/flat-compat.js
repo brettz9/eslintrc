@@ -9,14 +9,13 @@
 
 import path from "path";
 import { fileURLToPath } from "url";
-import { createRequire } from "module";
 import { assert } from "chai";
 import { FlatCompat } from "../../lib/index.js";
 
-const dirname = path.dirname(fileURLToPath(import.meta.url));
-const require = createRequire(import.meta.url);
+import environments from "../../conf/environments.js";
 
-const environments = require("../../conf/environments.cjs");
+const dirname = path.dirname(fileURLToPath(import.meta.url));
+
 
 //-----------------------------------------------------------------------------
 // Helpers

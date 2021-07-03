@@ -3,9 +3,7 @@
  * @author Nicholas C. Zakas
  */
 
-"use strict";
-
-module.exports = {
+export default {
     settings: {
         "eslint:recommended": true
     }
